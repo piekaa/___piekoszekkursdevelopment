@@ -1,0 +1,7 @@
+{
+  "toHide": [
+    "/src/test/java/AnotherExampleTest.java",
+    "/src/test/java/ExampleTest.java",
+    "/src/test/java/extension/PiekoszekExtension.java"
+  ]
+}

@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: ExampleTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 0.22 s <<< FAILURE! - in ExampleTest
+tenNiePrzejdzie2  Time elapsed: 0.196 s  <<< FAILURE!
+java.lang.AssertionError: /api/dupa zwróciło 500 przy dodawaniu
+
