@@ -1,3 +1,6 @@
 {
-  "toHide": []
+  "toHide": [
+    "src/test/java/PiekoszekCalculatorTest.java",
+    "src/test/java/extension/PiekoszekExtension.java"
+  ]
 }
