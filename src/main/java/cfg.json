@@ -12,21 +12,17 @@
           "name": "blockSignature"
         },
         {
-          "type": "METHOD_BODY",
-          "name": "blockBody"
-        },
-        {
           "type": "METHOD",
           "name": "blockAll"
         }
       ]
     },
     {
-      "file": "src/main/java/sp/BlockFile.java",
-      "blockFile": true
+      "file": "src/main/java/sp/BlockClass.java",
+      "blockClass": true
     },
     {
-      "file": "src/main/java/sp/BlockClass.java",
+      "file": "src/main/java/sp/NewFile.java",
       "blockClass": true
     }
   ]
