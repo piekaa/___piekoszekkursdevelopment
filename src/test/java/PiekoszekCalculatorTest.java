@@ -47,13 +47,6 @@ public class PiekoszekCalculatorTest {
     }
 
     @Test
-    void testDivide() {
-        assertThat(calculator.divide(60, 100))
-                .withFailMessage("Dzielenie nie działa")
-                .isEqualTo(0.6);
-    }
-
-    @Test
     void testModulo() {
         assertThat(calculator.modulo(13, 3))
                 .withFailMessage("Reszta z dzielenia nie działa")
