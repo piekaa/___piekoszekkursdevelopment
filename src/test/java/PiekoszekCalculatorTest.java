@@ -1,4 +1,5 @@
 import extension.PiekoszekExtension;
+import org.assertj.core.data.Offset;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
@@ -44,6 +45,13 @@ public class PiekoszekCalculatorTest {
         assertThat(calculator.multiply(10, 60))
                 .withFailMessage("Mnożenie nie działa")
                 .isEqualTo(600);
+    }
+
+    @Test
+    void testDivide() {
+        assertThat(calculator.divide(10, 60))
+                .withFailMessage("Dzielenie nie działa")
+                .isEqualTo(0.16f, Offset.offset(0.1f));
     }
 
     @Test

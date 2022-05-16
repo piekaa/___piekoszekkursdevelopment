@@ -4,19 +4,31 @@
   ],
   "toBlock": [
     {
-      "file": "src/main/java/sp/BlockMethods.java",
+      "file": "src/main/java/Calculator.java",
       "blocks": [
         {
           "type": "METHOD_SIGNATURE",
-          "name": "blockSignature"
+          "name": "add"
         },
         {
-          "type": "METHOD_BODY",
-          "name": "blockBody"
+          "type": "METHOD_SIGNATURE",
+          "name": "subtract"
         },
         {
-          "type": "METHOD",
-          "name": "blockAll"
+          "type": "METHOD_SIGNATURE",
+          "name": "square"
+        },
+        {
+          "type": "METHOD_SIGNATURE",
+          "name": "multiply"
+        },
+        {
+          "type": "METHOD_SIGNATURE",
+          "name": "divide"
+        },
+        {
+          "type": "METHOD_SIGNATURE",
+          "name": "modulo"
         }
       ]
     },
