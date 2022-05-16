@@ -1,6 +1,7 @@
 {
   "toHide": [
-    "src/test/java/PiekoszekCalculatorTest.java"
+    "src/test/java/PiekoszekCalculatorTest.java",
+    "src/test/java/extension/PiekoszekExtension.java"
   ],
   "toBlock": [
     {
@@ -31,14 +32,6 @@
           "name": "modulo"
         }
       ]
-    },
-    {
-      "file": "src/main/java/sp/BlockFile.java",
-      "blockFile": true
-    },
-    {
-      "file": "src/main/java/sp/BlockClass.java",
-      "blockClass": true
     }
   ]
 }
