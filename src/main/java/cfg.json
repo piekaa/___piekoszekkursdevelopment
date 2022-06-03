@@ -1,3 +1,21 @@
 {
-  "toHide": []
+  "toHide": [
+    "src/test/java/PiekoszekExtension.java",
+    "src/test/java/GreeterPiekoszekTest.java"
+  ],
+  "toBlock": [
+    {
+      "file": "src/main/java/Main.java",
+      "blockFile": true
+    },
+    {
+      "file": "src/main/java/Greeter.java",
+      "blocksAllExcept" : [
+        {
+          "type": "METHOD_BODY",
+          "name": "greet"
+        }
+      ]
+    }
+  ]
 }
