@@ -1,3 +1,17 @@
 {
-  "toHide": []
+  "toHide": [
+    "src/test/java/PiekoszekExtension.java",
+    "src/test/java/CounterPiekoszekTest.java"
+  ],
+  "toBlock": [
+    {
+      "file": "src/main/java/Counter.java",
+      "blocksAllExcept" : [
+        {
+          "type": "METHOD_BODY",
+          "name": "count"
+        }
+      ]
+    }
+  ]
 }
