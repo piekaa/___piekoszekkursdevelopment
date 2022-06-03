@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/Piekoszek-Kurs-Development.iml" filepath="$PROJECT_DIR$/Piekoszek-Kurs-Development.iml" />
-      <module fileurl="file://$PROJECT_DIR$/testkursapp.iml" filepath="$PROJECT_DIR$/testkursapp.iml" />
-    </modules>
-  </component>
-</project>
