@@ -5,4 +5,4 @@ aby zwracała `String` z odliczaniem od `1` do
 parametru `to`
 
 #### Przykład
-dla `to=8` metoda ma zwrócić `"1 2 3 4 5 5 6 7 8"`
+`count(8)` -> `"1 2 3 4 5 5 6 7 8"`
