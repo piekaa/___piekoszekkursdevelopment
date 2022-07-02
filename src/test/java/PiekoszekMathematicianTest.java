@@ -11,9 +11,9 @@ class PiekoszekMathematicianTest {
 
     @Test
     void testOrder() {
-        assertThat(mathematician.specialEquation(2, 2, 2, 2))
+        assertThat(mathematician.specialEquation(3, 3, 3, 2))
                 .withFailMessage("Zwróć uwagnę na kolejność wykonywania działań, najpierw to, co w nawiasie")
-                .isEqualTo(4f, Offset.offset(0.05f));
+                .isEqualTo(9f, Offset.offset(0.05f));
     }
 
     @Test
