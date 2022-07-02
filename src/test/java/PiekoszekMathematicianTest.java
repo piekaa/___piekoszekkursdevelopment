@@ -21,8 +21,7 @@ class PiekoszekMathematicianTest {
         var result = mathematician.specialEquation(34, 0.43f, 0.123f, 0.41f);
         assertThat(result)
                 .withFailMessage("""
-                                         (34 +0.43) * 0.123 / 0.41 = 10.329, a nie 
-                                         """ + result)
+                        (34 +0.43) * 0.123 / 0.41 = 10.329, a nie %.3f""".formatted(result))
                 .isEqualTo(10.329f, Offset.offset(0.05f));
     }
 
