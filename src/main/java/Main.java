@@ -1,11 +1,12 @@
 public class Main {
 
     public static void main(String[] args) {
+        var greeter = new Greeter();
 
         System.out.print("Powinno być: ");
-        System.out.println();
+        System.out.println("Good morning, Janusz");
 
         System.out.print("       Jest: ");
-        System.out.println();
+        System.out.println(greeter.greet("Janusz"));
     }
 }
