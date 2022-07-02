@@ -23,11 +23,8 @@ class PiekoszekMathematicianTest {
                 .withFailMessage("""
                         (34 +0.43) * 0.123 / 0.41 = 10.329, a nie %.3f""".formatted(result))
                 .isEqualTo(10.329f, Offset.offset(0.05f));
-    }
 
-    @Test
-    void testRandomStuff() {
-        var result = mathematician.specialEquation(43, 12, 99, 231);
+        result = mathematician.specialEquation(43, 12, 99, 231);
         assertThat(result)
                 .withFailMessage("Coś nie tak, próbuj dalej")
                 .isEqualTo(23.571428f, Offset.offset(0.05f));
