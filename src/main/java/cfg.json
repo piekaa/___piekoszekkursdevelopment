@@ -1,3 +1,22 @@
 {
-  "toHide": []
+  "toHide" : [ ],
+  "toBlock" : [ {
+    "file" : "/src/main/java/Mathematician.java",
+    "blocks" : [ ],
+    "blocksAllExcept" : [ {
+      "type" : "METHOD_BODY",
+      "name" : "oddOrEven"
+    } ],
+    "blockClass" : false,
+    "blockFile" : false
+  }, {
+    "file" : "/src/main/java/Main.java",
+    "blocks" : [ ],
+    "blocksAllExcept" : [ {
+      "type" : "METHOD_BODY",
+      "name" : "main"
+    } ],
+    "blockClass" : false,
+    "blockFile" : false
+  } ]
 }
