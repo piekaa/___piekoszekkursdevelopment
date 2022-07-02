@@ -16,7 +16,7 @@ class PiekoszekMathematicianTest {
             var result = mathematician.oddOrEven(number);
             checkAllowed(result);
             assertThat(result)
-                    .withFailMessage("%s to liczba nieparzysta".formatted(result))
+                    .withFailMessage("%s to liczba nieparzysta".formatted(number))
                     .isEqualTo("odd");
         }
     }
@@ -27,7 +27,7 @@ class PiekoszekMathematicianTest {
             var result = mathematician.oddOrEven(number);
             checkAllowed(result);
             assertThat(result)
-                    .withFailMessage("%s to liczba parzysta".formatted(result))
+                    .withFailMessage("%s to liczba parzysta".formatted(number))
                     .isEqualTo("even");
         }
     }
