@@ -34,9 +34,8 @@ class PiekoszekMathematicianTest {
 
     private void checkAllowed(String result) {
         assertThat(result).withFailMessage("Wynik nie może być nullem").isNotNull();
-        assertThat(result).withFailMessage("""
-                Powinno być "prime" lub "odd", a nie "%s"
-                """.formatted(result)).isNotNull();
+        assertThat(List.of("odd", "even").contains(result)).withFailMessage("""
+                Powinno być "prime" lub "odd", a nie "%s" """.formatted(result)).isTrue();
 
     }
 
