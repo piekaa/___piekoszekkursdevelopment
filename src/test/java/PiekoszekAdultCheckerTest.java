@@ -15,28 +15,24 @@ class PiekoszekAdultCheckerTest {
 
     @Test
     void checkAdult() {
-        checkAllowed(-13472);
-        assertThat(adultChecker.check(-13472)).withFailMessage("Ktoś, kto się jeszcze nie urodził, nie jest dorosły")
-                .isEqualTo("not adult");
-
         checkAllowed(0);
         assertThat(adultChecker.check(0)).withFailMessage("0 lat to nie dorosły")
                 .isEqualTo("not adult");
 
         checkAllowed(1);
-        assertThat(adultChecker.check(0)).withFailMessage("1 rok to jeszcze nie dorosły")
+        assertThat(adultChecker.check(1)).withFailMessage("1 rok to jeszcze nie dorosły")
                 .isEqualTo("not adult");
 
-        for (int i = 2; i <= 4; i++) {
-            checkAllowed(i);
-            assertThat(adultChecker.check(0)).withFailMessage(i + " lata to jeszcze nie dorosły")
+        for (int age = 2; age <= 4; age++) {
+            checkAllowed(age);
+            assertThat(adultChecker.check(age)).withFailMessage(age + " lata to jeszcze nie dorosły")
                     .isEqualTo("not adult");
         }
 
-        for (int i = 5; i <= 17; i++) {
-            checkAllowed(i);
-            assertThat(adultChecker.check(0)).withFailMessage(i + " lat to jeszcze nie dorosły")
-                    .isEqualTo("adult");
+        for (int age = 5; age <= 17; age++) {
+            checkAllowed(age);
+            assertThat(adultChecker.check(age)).withFailMessage(age + " lat to jeszcze nie dorosły")
+                    .isEqualTo("not adult");
         }
 
         for(var age : List.of(18, 19, 36, 69, 88)) {
@@ -49,7 +45,9 @@ class PiekoszekAdultCheckerTest {
         assertThat(adultChecker.check(9357)).withFailMessage("Ktoś, kto ma 9357 lat może i już nie żyje, ale dorosły jest")
                 .isEqualTo("adult");
 
-
+        checkAllowed(-13472);
+        assertThat(adultChecker.check(-13472)).withFailMessage("Ktoś, kto się jeszcze nie urodził (ma mniej niż 0 lat), nie jest dorosły")
+                .isEqualTo("not adult");
     }
 
     private void checkAllowed(int age) {
