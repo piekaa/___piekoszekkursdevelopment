@@ -7,6 +7,5 @@ public class Main {
 
         System.out.print("       Jest: ");
         System.out.println();
-
     }
 }
