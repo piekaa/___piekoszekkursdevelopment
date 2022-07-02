@@ -1,8 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-
-        Counter counter = new Counter();
+        var counter = new Counter();
 
         System.out.print("Powinno być: ");
         System.out.println("1 2 3 4 5");
