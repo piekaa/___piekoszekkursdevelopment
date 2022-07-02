@@ -12,23 +12,23 @@ class PiekoszekMathematicianTest {
 
     @Test
     void shouldBeOdd() {
-        for (var number : List.of(0, 2, 6, 20, 5432, 4388, 1030210)) {
-            var result = mathematician.oddOrEven(number);
-            checkAllowed(result);
-            assertThat(result)
-                    .withFailMessage("%s to liczba parzysta".formatted(result))
-                    .isEqualTo("prime");
-        }
-    }
-
-    @Test
-    void shouldBePrime() {
         for (var number : List.of(-5, 11, 23423, 555555, 100001, 3225777, 1382147)) {
             var result = mathematician.oddOrEven(number);
             checkAllowed(result);
             assertThat(result)
                     .withFailMessage("%s to liczba nieparzysta".formatted(result))
-                    .isEqualTo("prime");
+                    .isEqualTo("odd");
+        }
+    }
+
+    @Test
+    void shouldBeEven() {
+        for (var number : List.of(0, 2, 6, 20, 5432, 4388, 1030210)) {
+            var result = mathematician.oddOrEven(number);
+            checkAllowed(result);
+            assertThat(result)
+                    .withFailMessage("%s to liczba parzysta".formatted(result))
+                    .isEqualTo("even");
         }
     }
 
