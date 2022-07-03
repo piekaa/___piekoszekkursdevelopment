@@ -5,4 +5,4 @@ aby witała po imieniu z parametru `name`.
 
 #### Przykład
 
-`count("Marian")` - > `"Good morning, Marian"`
+`greet("Marian")` - > `"Good morning, Marian"`
