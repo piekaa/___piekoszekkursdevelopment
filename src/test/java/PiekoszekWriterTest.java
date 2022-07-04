@@ -9,16 +9,17 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
+@ExtendWith(PiekoszekExtension.class)
 class PiekoszekWriterTest {
 
     @Mock
-    private Letters letters;
+    Letters letters;
 
     @Test
     void shouldUseLetters() {
         Writer writer = new Writer(letters);
         writer.connectAndCapitalizeWords("aaa", "bbb");
-        verify(letters, description("Musisz użyć metody capitalize na obiekcie letters")).capitalize(any());
+        verify(letters, atLeast(1).description("Musisz użyć metody capitalize na obiekcie letters")).capitalize(any());
     }
 
     @Test
@@ -36,11 +37,11 @@ class PiekoszekWriterTest {
         when(letters.capitalize("marian")).thenReturn("Marian");
         when(letters.capitalize("pazdzioch")).thenReturn("Pazdzioch");
 
-        var result = writer.connectAndCapitalizeWords("aaa", "bbb");
+        var result = writer.connectAndCapitalizeWords("marian", "pazdzioch");
 
         assertThat(result)
                 .withFailMessage("""
                         dla "marian", "pazdzioch", powinno być "MarianPazdzioch", a nie "%s" """.formatted(result))
-                .isEqualTo("AaaBbb");
+                .isEqualTo("MarianPazdzioch");
     }
 }
