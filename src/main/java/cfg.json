@@ -1,3 +1,28 @@
 {
-  "toHide": []
+  "toHide" : [ ],
+  "toBlock" : [ {
+    "file" : "/src/main/java/Letters.java",
+    "blocks" : [ ],
+    "blocksAllExcept" : [ ],
+    "blockClass" : false,
+    "blockFile" : true
+  }, {
+    "file" : "/src/main/java/Main.java",
+    "blocks" : [ ],
+    "blocksAllExcept" : [ {
+      "type" : "METHOD_BODY",
+      "name" : "main"
+    } ],
+    "blockClass" : false,
+    "blockFile" : false
+  }, {
+    "file" : "/src/main/java/Writer.java",
+    "blocks" : [ ],
+    "blocksAllExcept" : [ {
+      "type" : "METHOD_BODY",
+      "name" : "connectAndCapitalizeWords"
+    } ],
+    "blockClass" : false,
+    "blockFile" : false
+  } ]
 }
