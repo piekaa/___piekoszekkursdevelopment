@@ -1,4 +1,5 @@
 ///hide
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.TestExecutionExceptionHandler;
@@ -11,6 +12,8 @@ public class PiekoszekExtension implements TestExecutionExceptionHandler {
     public void handleTestExecutionException(ExtensionContext context, Throwable throwable) {
         if (throwable instanceof AssertionError) {
             replaceStackTrace(throwable, new StackTraceElement[0]);
+            cutMessage(throwable);
+
             throw (AssertionError) throwable;
         }
 
@@ -35,6 +38,18 @@ public class PiekoszekExtension implements TestExecutionExceptionHandler {
                     .getDeclaredField("stackTrace");
             field.setAccessible(true);
             field.set(throwable, newStackTrace);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void cutMessage(Throwable throwable) {
+        try {
+            String message = throwable.getMessage();
+            Field field = Throwable.class
+                    .getDeclaredField("detailMessage");
+            field.setAccessible(true);
+            field.set(throwable, message.split("\n\n")[0]);
         } catch (Exception e) {
             e.printStackTrace();
         }
