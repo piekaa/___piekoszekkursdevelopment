@@ -1,4 +1,5 @@
 ///hide
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
@@ -18,8 +19,14 @@ class CounterPiekoszekTest {
 
     @Test
     void shouldCount() {
+        var result5 = counter.count(5);
+        assertThat(result5)
+                .withFailMessage("""
+                        Dla 5 powinno być "1 2 3 4 5", a nie "%s" """.formatted(result5))
+                .isEqualTo("1 2 3 4 5");
+
         assertThat(counter.count(6))
-                .withFailMessage("Coś nie działa, próbuj dalej")
+                .withFailMessage("Działa tylko dla 5?")
                 .isEqualTo("1 2 3 4 5 6");
 
         assertThat(counter.count(20))
