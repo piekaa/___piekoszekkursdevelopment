@@ -1,11 +1,13 @@
 ///hide
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+@ExtendWith(PiekoszekExtension.class)
 class PiekoszekMathematicianTest {
 
     Mathematician mathematician = new Mathematician();
