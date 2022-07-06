@@ -6,6 +6,6 @@ public class Main {
         System.out.println("PiekoszkaKursJestNajlepszy");
 
         System.out.print("       Jest: ");
-        System.out.println(new StringConverter().toPascalCase("piekoszeka kurs jest najlepszy"));
+        System.out.println(new StringConverter().toPascalCase("piekoszka kurs jest najlepszy"));
     }
 }
