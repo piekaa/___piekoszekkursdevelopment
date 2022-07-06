@@ -18,10 +18,11 @@ public class PiekoszekStringConverterTest {
 
     @Test
     void testRandomStuff() {
-        var result = stringConverter.toPascalCase("było cymbalistwó wielu");
+        var result = stringConverter.toPascalCase("było cymbalistów wielu");
         assertThat(result)
                 .withFailMessage("""
-                        Dla "było cymbalistów wielu" powinno być "ByłoCymbalistówWielu", a nie "%s" """.formatted(result));
+                        Dla "było cymbalistów wielu" powinno być "ByłoCymbalistówWielu", a nie "%s" """.formatted(result))
+                        .isEqualTo("ByłoCymbalistówWielu");
 
         assertThat(stringConverter.toPascalCase("dupa jasia kleofasa"))
                 .withFailMessage("Coś nie działa")
