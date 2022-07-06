@@ -3,10 +3,7 @@
   "toBlock" : [ {
     "file" : "/src/main/java/StringConverter.java",
     "blocks" : [ ],
-    "blocksAllExcept" : [ {
-      "type" : "METHOD_BODY",
-      "name" : "toPascalCase"
-    } ],
+    "blocksAllExcept" : [ ],
     "blockClass" : false,
     "blockFile" : false
   } ]
