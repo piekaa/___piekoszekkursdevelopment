@@ -1,3 +1,13 @@
 {
-  "toHide": []
+  "toHide" : [ ],
+  "toBlock" : [ {
+    "file" : "/src/main/java/Adder.java",
+    "blocks" : [ ],
+    "blocksAllExcept" : [ {
+      "type" : "METHOD_BODY",
+      "name" : "add"
+    } ],
+    "blockClass" : false,
+    "blockFile" : false
+  } ]
 }
