@@ -33,7 +33,7 @@ class PiekoszekStringConverterTest {
         } catch (AssertionError e) {
             throw e;
         } catch (Throwable t) {
-            Assertions.fail("Poleciał wyjątek dla 2 spacji obok siebie, ale nie IllegalArgumentException");
+            Assertions.fail("Poleciał wyjątek dla 2 spacji obok siebie, ale nie IllegalArgumentException, tylko %s".formatted(t.getClass().getSimpleName()));
         }
     }
 
@@ -47,7 +47,7 @@ class PiekoszekStringConverterTest {
         } catch (AssertionError e) {
             throw e;
         } catch (Throwable t) {
-            Assertions.fail("Poleciał wyjątek dla spacji na początku, ale nie IllegalArgumentException");
+            Assertions.fail("Poleciał wyjątek dla spacji na początku, ale nie IllegalArgumentException, tylko %s".formatted(t.getClass().getSimpleName()));
         }
     }
 
@@ -61,7 +61,7 @@ class PiekoszekStringConverterTest {
         } catch (AssertionError e) {
             throw e;
         } catch (Throwable t) {
-            Assertions.fail("Poleciał wyjątek dla spacji na końcu, ale nie IllegalArgumentException");
+            Assertions.fail("Poleciał wyjątek dla spacji na końcu, ale nie IllegalArgumentException, tylko %s".formatted(t.getClass().getSimpleName()));
         }
     }
 
@@ -75,7 +75,7 @@ class PiekoszekStringConverterTest {
         } catch (AssertionError e) {
             throw e;
         } catch (Throwable t) {
-            Assertions.fail("Poleciał wyjątek dla 2 spacji na początku, ale nie IllegalArgumentException");
+            Assertions.fail("Poleciał wyjątek dla 2 spacji na początku, ale nie IllegalArgumentException, tylko %s".formatted(t.getClass().getSimpleName()));
         }
     }
 
@@ -89,7 +89,7 @@ class PiekoszekStringConverterTest {
         } catch (AssertionError e) {
             throw e;
         } catch (Throwable t) {
-            Assertions.fail("Poleciał wyjątek dla 2 spacji na końcu, ale nie IllegalArgumentException");
+            Assertions.fail("Poleciał wyjątek dla 2 spacji na końcu, ale nie IllegalArgumentException, tylko %s".formatted(t.getClass().getSimpleName()));
         }
     }
 
