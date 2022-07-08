@@ -1,3 +1,13 @@
 {
-  "toHide": []
+  "toHide" : [ ],
+  "toBlock" : [ {
+    "file" : "/src/main/java/StringConverter.java",
+    "blocks" : [ ],
+    "blocksAllExcept" : [ {
+      "type" : "METHOD_BODY",
+      "name" : "validate"
+    } ],
+    "blockClass" : false,
+    "blockFile" : false
+  } ]
 }
