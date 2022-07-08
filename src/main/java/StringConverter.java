@@ -6,8 +6,8 @@ class StringConverter {
         var nextUpper = true;
         StringBuilder result = new StringBuilder();
         for (char character : text.toCharArray()) {
-            if(character != ' ') {
-                if( nextUpper) {
+            if (character != ' ') {
+                if (nextUpper) {
                     result.append(Character.toUpperCase(character));
                 } else {
                     result.append(character);
