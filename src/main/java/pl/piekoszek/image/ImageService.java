@@ -2,6 +2,7 @@ package pl.piekoszek.image;
 
 import org.springframework.stereotype.Component;
 
+import java.awt.*;
 import java.io.IOException;
 
 @Component

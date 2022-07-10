@@ -32,7 +32,7 @@ class PiekoszekImageServiceTest {
         assertColor(new Color(blackAndWhiteImage.getRGB(0,0)), 2);
         assertColor(new Color(blackAndWhiteImage.getRGB(0,1)), 5);
         assertColor(new Color(blackAndWhiteImage.getRGB(1,0)), 9);
-        assertColor(new Color(blackAndWhiteImage.getRGB(1,1)), 20);
+        assertColor(new Color(blackAndWhiteImage.getRGB(1,1)), 30);
 
 
     }
