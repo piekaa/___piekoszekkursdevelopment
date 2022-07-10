@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .drop-area {
+            width: 50%;
+            height: 50vh;
+            border: black 3px dotted;
+        }
+
+        .output-image {
+            max-width: 50%;
+        }
+
+
+    </style>
+
+    <title>Black and white</title>
+</head>
+
+<body>
+
+    <div id="dropArea" class="drop-area">
+
+    </div>
+
+    <img id="outputImage" class="output-image">
+
+</body>
+
+<script type="module">
+
+    const dropAreaElement = document.getElementById("dropArea");
+    dropAreaElement.ondragover = (event) => {
+        event.preventDefault();
+    };
+    dropAreaElement.ondrop = (event) => {
+        event.preventDefault();
+        console.log(event);
+        const file = event.dataTransfer.items[0].getAsFile();
+        file.arrayBuffer()
+            .then(array =>
+                fetch("api/black-and-white", {
+                    method: "POST",
+                    body: array
+                })
+            ).then(res => res.blob())
+            .then(blob => {
+                document.getElementById("outputImage").src = URL.createObjectURL(blob);
+            })
+    }
+
+</script>
+
+</html>
