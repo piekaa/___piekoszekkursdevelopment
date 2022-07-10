@@ -27,5 +27,11 @@
     "blocksAllExcept" : [ ],
     "blockClass" : false,
     "blockFile" : true
+  }, {
+    "file" : "/src/test/java/pl/piekoszek/image/ImageServiceTest.java",
+    "blocks" : [ ],
+    "blocksAllExcept" : [ ],
+    "blockClass" : false,
+    "blockFile" : true
   } ]
 }
