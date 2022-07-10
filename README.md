@@ -9,6 +9,8 @@ Zadanie polega na zaimplementowaniu `toBlackAndWhite`
 w klasie `pl.piekoszek.image.ImageService` tak, aby
 zamieniała obrazek na czarno-biały.
 
+#### Obrazek Musi być w formacie PNG!
+
 Metodą zamiany ma być obliczenie dla każdego pixela średniej z 
 kolorów składowych (R, G, B).
 
