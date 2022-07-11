@@ -1,18 +1,6 @@
 {
   "toHide" : [ ],
   "toBlock" : [ {
-    "file" : "/src/main/java/GuesserGame.java",
-    "blocks" : [ ],
-    "blocksAllExcept" : [ {
-      "type" : "METHOD_BODY",
-      "name" : "GuesserGame"
-    }, {
-      "type" : "METHOD_BODY",
-      "name" : "guess"
-    } ],
-    "blockClass" : false,
-    "blockFile" : false
-  }, {
     "file" : "/src/main/java/GuessResponse.java",
     "blocks" : [ ],
     "blocksAllExcept" : [ ],
@@ -30,5 +18,17 @@
     "blocksAllExcept" : [ ],
     "blockClass" : false,
     "blockFile" : true
+  }, {
+    "file" : "/src/main/java/GuesserGame.java",
+    "blocks" : [ {
+      "type" : "METHOD_SIGNATURE",
+      "name" : "GuesserGame"
+    }, {
+      "type" : "METHOD_SIGNATURE",
+      "name" : "guess"
+    } ],
+    "blocksAllExcept" : [ ],
+    "blockClass" : false,
+    "blockFile" : false
   } ]
 }
