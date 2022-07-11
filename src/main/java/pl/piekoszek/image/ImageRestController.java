@@ -18,7 +18,7 @@ class ImageRestController {
         this.imageService = imageService;
     }
 
-    @PostMapping(value = "black-and-white", produces = MediaType.IMAGE_JPEG_VALUE)
+    @PostMapping(value = "black-and-white", produces = MediaType.IMAGE_PNG_VALUE)
     byte[] toBlackAndWhite(@RequestBody byte[] imageBytes) throws IOException {
         return imageService.toBlackAndWhite(imageBytes);
     }
