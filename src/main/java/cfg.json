@@ -1,3 +1,19 @@
 {
-  "toHide": []
+  "toHide" : [ ],
+  "toBlock" : [ {
+    "file" : "/src/main/java/Main.java",
+    "blocks" : [ ],
+    "blocksAllExcept" : [ ],
+    "blockClass" : false,
+    "blockFile" : true
+  }, {
+    "file" : "/src/main/java/FileSpaceCounter.java",
+    "blocks" : [ ],
+    "blocksAllExcept" : [ {
+      "type" : "METHOD_BODY",
+      "name" : "countSpaces"
+    } ],
+    "blockClass" : false,
+    "blockFile" : false
+  } ]
 }
