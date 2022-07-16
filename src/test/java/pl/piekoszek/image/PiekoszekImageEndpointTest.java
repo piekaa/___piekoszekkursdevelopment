@@ -39,7 +39,7 @@ class PiekoszekImageEndpointTest {
 
         var imageBytes = imageConverter.toByteArray(image);
 
-        var response = mockMvc.perform(post("/api/revese-colors")
+        var response = mockMvc.perform(post("/api/reverse-colors")
                         .contentType(MediaType.APPLICATION_OCTET_STREAM)
                         .content(imageBytes))
                 .andReturn().getResponse();
