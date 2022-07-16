@@ -2,7 +2,6 @@ package pl.piekoszek.image;
 
 import org.springframework.stereotype.Component;
 
-import java.awt.*;
 import java.io.IOException;
 
 @Component
@@ -14,7 +13,7 @@ class ImageService {
         this.bufferedImageConverter = bufferedImageConverter;
     }
 
-    byte[] toBlackAndWhite(byte[] imageBytes) throws IOException {
+    byte[] reverseColors(byte[] imageBytes) throws IOException {
         return imageBytes;
     }
 }

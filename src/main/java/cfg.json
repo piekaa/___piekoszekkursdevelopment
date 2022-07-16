@@ -13,25 +13,19 @@
     "blockClass" : false,
     "blockFile" : true
   }, {
-    "file" : "/src/main/java/pl/piekoszek/image/ImageService.java",
-    "blocks" : [ ],
-    "blocksAllExcept" : [ {
-      "type" : "METHOD_BODY",
-      "name" : "toBlackAndWhite"
-    } ],
-    "blockClass" : false,
-    "blockFile" : false
-  }, {
     "file" : "/src/main/java/pl/piekoszek/Main.java",
     "blocks" : [ ],
     "blocksAllExcept" : [ ],
     "blockClass" : false,
     "blockFile" : true
   }, {
-    "file" : "/src/test/java/pl/piekoszek/image/ImageServiceTest.java",
+    "file" : "/src/main/java/pl/piekoszek/image/ImageService.java",
     "blocks" : [ ],
-    "blocksAllExcept" : [ ],
+    "blocksAllExcept" : [ {
+      "type" : "METHOD_BODY",
+      "name" : "reverseColors"
+    } ],
     "blockClass" : false,
-    "blockFile" : true
+    "blockFile" : false
   } ]
 }
