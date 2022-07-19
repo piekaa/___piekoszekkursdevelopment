@@ -1,3 +1,13 @@
 {
-  "toHide": []
+  "toHide" : [ ],
+  "toBlock" : [ {
+    "file" : "/src/main/java/TextDrawer.java",
+    "blocks" : [ ],
+    "blocksAllExcept" : [ {
+      "type" : "METHOD_BODY",
+      "name" : "drawSquare"
+    } ],
+    "blockClass" : false,
+    "blockFile" : false
+  } ]
 }
