@@ -5,7 +5,7 @@
     "blocks" : [ ],
     "blocksAllExcept" : [ {
       "type" : "METHOD_BODY",
-      "name" : "drawSquare"
+      "name" : "drawRectangle"
     } ],
     "blockClass" : false,
     "blockFile" : false

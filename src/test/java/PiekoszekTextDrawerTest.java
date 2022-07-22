@@ -12,28 +12,27 @@ class PiekoszekTextDrawerTest {
 
     @Test
     void testSquareHasSpaces() {
-        assertThat(textDrawer.drawSquare(2))
+        assertThat(textDrawer.drawRectangle(2, 2, '%'))
                 .withFailMessage("Brakuje przejścia do nowej linii")
-                .isNotEqualTo("####");
+                .isNotEqualTo("%%%%");
     }
 
     @Test
     void assertSupportedCharacters() {
-        assertThat(textDrawer.drawSquare(4).lines())
-                .withFailMessage("Tekst zawiera znak inny niż #")
-                .allMatch(line -> line.chars().allMatch(c -> c == '#'));
+        var character = '&';
+        assertThat(textDrawer.drawRectangle(2, 3, character).lines())
+                .withFailMessage("Tekst zawiera inny znak, niż podany jako parametr")
+                .allMatch(line -> line.chars().allMatch(c -> c == character));
     }
 
     @Test
     void assertCorrectDrawing() {
-        assertThat(textDrawer.drawSquare(6))
+        assertThat(textDrawer.drawRectangle(4, 2, '&'))
                 .withFailMessage("String nie powinien kończyć się przejściem do nowej linii")
-                .isNotEqualTo("######\n######\n######\n######\n######\n######\n");
+                .isNotEqualTo("&&&&\n&&&&\n");
 
-        assertThat(textDrawer.drawSquare(6))
+        assertThat(textDrawer.drawRectangle(4, 2, '&'))
                 .withFailMessage("Coś nie tak rysuje")
-                .isEqualTo("######\n######\n######\n######\n######\n######");
+                .isEqualTo("&&&&\n&&&&");
     }
-
-
 }

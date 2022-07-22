@@ -1,6 +1,6 @@
 public class TextDrawer {
 
-    String drawSquare(int size) {
+    String drawRectangle(int width, int height, char character) {
         return "";
     }
 }

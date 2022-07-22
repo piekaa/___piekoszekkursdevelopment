@@ -1,16 +1,15 @@
 ### Zadanie
 
-Zaimplementuj metodę `drawSquare` w klasie `TextDrawer` tak, aby zwracała `String` 
-przedstawiający kwadrat o boku `size` stworzony ze znaków `#`
+Zaimplementuj metodę `drawRectangle` w klasie `TextDrawer` tak, aby zwracała `String` 
+przedstawiający prostokąc o wymiarach `width` na `height` stworzony ze znaków `character`
 
 #### Przykład
 
-`drawSquare(5)` ->
+`drawSquare(3, 4, '%')` ->
 
 ````
-#####
-#####
-#####
-#####
-#####
+%%%
+%%%
+%%%
+%%%
 ````
