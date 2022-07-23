@@ -1,3 +1,28 @@
 {
-  "toHide": []
+  "toHide" : [ ],
+  "toBlock" : [ {
+    "file" : "/src/main/java/Main.java",
+    "blocks" : [ ],
+    "blocksAllExcept" : [ ],
+    "blockClass" : true,
+    "blockFile" : false
+  }, {
+    "file" : "/src/main/java/Employee.java",
+    "blocks" : [ ],
+    "blocksAllExcept" : [ {
+      "type" : "METHOD_BODY",
+      "name" : "toString"
+    } ],
+    "blockClass" : false,
+    "blockFile" : false
+  }, {
+    "file" : "/src/main/java/CsvService.java",
+    "blocks" : [ ],
+    "blocksAllExcept" : [ {
+      "type" : "METHOD_BODY",
+      "name" : "export"
+    } ],
+    "blockClass" : false,
+    "blockFile" : false
+  } ]
 }
