@@ -1,5 +1,7 @@
 ///hide
 
+package pl.piekoszek.citytemp;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.TestExecutionExceptionHandler;
