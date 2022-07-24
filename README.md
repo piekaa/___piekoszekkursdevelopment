@@ -35,3 +35,6 @@ Wybierze miasto z największą `temp` i zwróci nazwę miasta.
   "city": "Supraśl"
 }
 ````
+
+
+### Przed puszczeniem sprawdznaia odpowiedzi `Run Piekoszek` trzeba wyłączyć swoją aplikację.

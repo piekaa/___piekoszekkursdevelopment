@@ -1,3 +1,10 @@
 {
-  "toHide": []
+  "toHide" : [ ],
+  "toBlock" : [ {
+    "file" : "/src/main/java/pl/piekoszek/Main.java",
+    "blocks" : [ ],
+    "blocksAllExcept" : [ ],
+    "blockClass" : false,
+    "blockFile" : true
+  } ]
 }
