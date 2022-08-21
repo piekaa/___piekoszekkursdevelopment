@@ -24,6 +24,11 @@ public class PiekoszekStringConverterTest {
                         Dla "było cymbalistów wielu" powinno być "ByłoCymbalistówWielu", a nie "%s" """.formatted(result))
                         .isEqualTo("ByłoCymbalistówWielu");
 
+        result = stringConverter.toPascalCase("było cymbalistów wielu");
+        assertThat(result)
+                .withFailMessage("Metoda wywołana dwa razy pod rząd powinna zwrócić ten sam wynik")
+                .isEqualTo("ByłoCymbalistówWielu");
+
         assertThat(stringConverter.toPascalCase("dupa jasia kleofasa"))
                 .withFailMessage("Coś nie działa")
                 .isEqualTo("DupaJasiaKleofasa");
