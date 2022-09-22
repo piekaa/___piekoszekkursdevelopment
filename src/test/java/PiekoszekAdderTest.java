@@ -21,7 +21,7 @@ class PiekoszekAdderTest {
                 .withFailMessage("Dla [10, 20, 50, 60] powinno być (80, 60), a nie %s".formatted(result))
                 .isEqualTo(new SumResult(80, 60));
 
-        assertThat(new int[]{4236, 13, 345, 122, 321, 56})
+        assertThat(adder.add(new int[]{4236, 13, 345, 122, 321, 56}))
                 .withFailMessage("Coś nie działa")
                 .isEqualTo(new SumResult(191, 4902));
     }
