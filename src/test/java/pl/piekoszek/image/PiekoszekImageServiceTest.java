@@ -15,6 +15,23 @@ import static org.assertj.core.api.Assertions.assertThat;
 class PiekoszekImageServiceTest {
 
     @Test
+    void shouldChangePixelsToBlackAndWhiteNoSquareImage() throws IOException {
+        var imageConverter = new BufferedImageConverter();
+        var imageService = new ImageService(imageConverter);
+
+        var image = new BufferedImage(2,1, BufferedImage.TYPE_INT_RGB);
+
+        image.setRGB(0, 0, new Color(1, 2, 3).getRGB());
+        image.setRGB(1, 0, new Color(8, 9, 10).getRGB());
+
+        var blackAndWhiteImage = imageConverter.toBufferedImage(
+                imageService.toBlackAndWhite(imageConverter.toByteArray(image)));
+
+        assertColor(new Color(blackAndWhiteImage.getRGB(0,0)), 2);
+        assertColor(new Color(blackAndWhiteImage.getRGB(1,0)), 9);
+    }
+
+    @Test
     void shouldChangePixelsToBlackAndWhite() throws IOException {
         var imageConverter = new BufferedImageConverter();
         var imageService = new ImageService(imageConverter);
